@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: 'Texta';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Texta';
+  src: url(../src/Assets/Fonts/TextaRegular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Texta';
+  src: url(../src/Assets/Fonts/TextaMedium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Texta';
+  src: url(../src/Assets/Fonts/TextaBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Texta';
+  src: url(../src/Assets/Fonts/TextaBlack.ttf);
+  font-weight: 700;
+}

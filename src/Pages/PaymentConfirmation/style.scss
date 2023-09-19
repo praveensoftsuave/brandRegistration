@@ -1,0 +1,171 @@
+.PaymentConfirmation-container {
+  border-radius: 5px;
+  box-shadow: -2px 6px 16px 3px #00000014;
+  header {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #333333;
+    text-align: left;
+    padding: 20px 30px 0;
+  }
+  em {
+    border-bottom: 1px solid #bbbbbb;
+    text-align: left;
+    display: flex;
+    padding-bottom: 10px;
+    line-height: 1.1;
+    margin: 0 30px 10px;
+  }
+  .payment-details-wrapper {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .payment-amout-list {
+    > div {
+      display: grid;
+      grid-template-columns: 1fr 150px;
+      text-align: left;
+      font-weight: 600;
+      padding: 8px 10px;
+      font-size: 16px;
+      span {
+        color: #3eaf29;
+      }
+      &:last-child {
+        border: 1px solid #e0e0e0;
+        border-left: none;
+        border-right: none;
+        font-size: 20px;
+      }
+      &:nth-last-child(2) {
+        font-size: 20px;
+      }
+      @media (max-width: 540px) {
+        grid-template-columns: 1fr 80px;
+      }
+    }
+  }
+  .payment-details-list {
+    > div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: left;
+      font-weight: 600;
+      padding: 8px 10px;
+      font-size: 16px;
+      border-bottom: 1px solid #ccc;
+      &:last-child {
+        border-bottom: none;
+      }
+      @media (max-width: 540px) {
+      }
+    }
+  }
+  .MuiFormControlLabel-root {
+    padding: 10px 30px 0px;
+    margin-bottom: 60px;
+    width: 100%;
+    .MuiTypography-root {
+      font-size: 16px;
+      font-family: "Texta";
+      text-align: left;
+      line-height: 1.1;
+      a,
+      span {
+        color: #3eaf29;
+        text-decoration: none;
+      }
+    }
+  }
+  .MuiAlert-root {
+    margin: 20px 30px;
+    .MuiAlert-message {
+      text-align: left;
+      color: #333333;
+      font-family: "Texta";
+      font-size: 20px;
+      font-weight: 600;
+      padding-top: 5px;
+    }
+    .MuiAlert-icon {
+      color: #bbbbbb;
+      font-size: 26px;
+    }
+  }
+  .MuiTableContainer-root {
+    box-shadow: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    table {
+      table-layout: auto;
+      thead {
+        background-color: #f4f5f6;
+        tr {
+          th {
+            font-family: "Texta";
+            font-size: 18px;
+          }
+        }
+      }
+      tbody {
+        tr {
+          th {
+            &:last-child {
+              width: 180px;
+            }
+            font-family: "Texta";
+            font-size: 18px;
+          }
+          &:last-child {
+            th {
+              &:last-child {
+                color: #3eaf29;
+              }
+              &:first-child {
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.PreviewComponent-container {
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+  min-height: calc(100vh - 124px);
+  .footer-container {
+    margin-top: auto;
+  }
+  .MuiAccordion-root {
+    margin: -1px 20px !important;
+    box-shadow: 0 6px 16px #00000012;
+    border-top: 1px solid #0000001f;
+    border-bottom: 1px solid #0000001f;
+    &:first-child {
+      border-top: none;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+  .MuiAccordionSummary-root {
+    &.Mui-expanded {
+      .MuiAccordionSummary-content {
+        &.Mui-expanded {
+          margin: 10px 0 0;
+          transition: all 0.25s ease;
+        }
+      }
+    }
+  }
+}
